@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bwn-9X-Ckm">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animations-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Core_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3s-bH-ztJ">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qhp-bb-yZz">
+                                        <rect key="frame" x="30" y="649" width="333" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="wpk-0B-MFC"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Select Animation">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_earth" translatesAutoresizingMaskIntoConstraints="NO" id="L1h-9t-ckf">
+                                        <rect key="frame" x="46.666666666666657" y="100" width="300" height="300"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="acK-gi-UZO"/>
+                                            <constraint firstAttribute="width" constant="300" id="g4P-Vz-KAY"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qhp-bb-yZz" secondAttribute="trailing" constant="30" id="4uI-ZH-dZW"/>
+                                    <constraint firstAttribute="bottom" secondItem="qhp-bb-yZz" secondAttribute="bottom" constant="60" id="UbZ-fi-EQq"/>
+                                    <constraint firstItem="L1h-9t-ckf" firstAttribute="top" secondItem="H3s-bH-ztJ" secondAttribute="top" constant="100" id="aJJ-cY-TCD"/>
+                                    <constraint firstItem="qhp-bb-yZz" firstAttribute="centerX" secondItem="H3s-bH-ztJ" secondAttribute="centerX" id="eAV-HY-Y6A"/>
+                                    <constraint firstItem="L1h-9t-ckf" firstAttribute="centerX" secondItem="H3s-bH-ztJ" secondAttribute="centerX" id="kDu-Sk-Vqh"/>
+                                    <constraint firstItem="qhp-bb-yZz" firstAttribute="leading" secondItem="H3s-bH-ztJ" secondAttribute="leading" constant="30" id="nzv-ru-Fc4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="H3s-bH-ztJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SDp-V8-1Cb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H3s-bH-ztJ" secondAttribute="trailing" id="YZp-ap-6Jy"/>
+                            <constraint firstAttribute="bottom" secondItem="H3s-bH-ztJ" secondAttribute="bottom" id="iSx-eT-7Te"/>
+                            <constraint firstItem="H3s-bH-ztJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lpo-0N-oEg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Animations" id="v1Y-y6-pro"/>
+                    <connections>
+                        <outlet property="animation_img" destination="L1h-9t-ckf" id="SBO-x0-HDh"/>
+                        <outlet property="bg_backView" destination="H3s-bH-ztJ" id="3GH-yJ-Uoz"/>
+                        <outlet property="btn_animation" destination="qhp-bb-yZz" id="VIQ-d1-Dx2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930.53435114503816" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kHk-LN-uO5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bwn-9X-Ckm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rIb-IM-lqK">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.30581759009999998" green="0.56135800629999999" blue="0.76439239029999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance"/>
+                        <navigationBarAppearance key="compactAppearance">
+                            <color key="backgroundColor" red="0.30588235294117649" green="0.5607843137254902" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.30581759009999998" green="0.56135800629999999" blue="0.76439239029999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="compactScrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.30581759009999998" green="0.56135800629999999" blue="0.76439239029999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="o6c-2c-RS6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAz-IQ-YhD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3.8167938931297707" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_earth" width="500" height="375"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
